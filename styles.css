@@ -80,6 +80,18 @@
     background-color: #059fff;
     grid-area: 1/1/-1/2 
   }
+
+  .sidebar h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .sidebar li {
+    font-size: 2rem;
+  }
+
+ li {
+    list-style: none;
+ }
   
   .side-info {
     background-color: var(--main-color);
@@ -100,6 +112,17 @@
     font-family: sans-serif;
     color: white;
     text-align: left;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+
+  .gap {
+    margin-bottom: 10%;
   }
   
   
