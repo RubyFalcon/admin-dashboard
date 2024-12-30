@@ -1,5 +1,9 @@
 :root {
     --main-color : #e5e9f1;
+
+    --white: #ffffff;
+    --yellow: #ffa805;
+    
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -18,6 +22,8 @@
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
     height: 100vh;
+    font-family: 'Roboto' , sans-serif;
+
   }
   
   /* 5. Improve media defaults */
@@ -77,12 +83,14 @@
   }
 
   .sidebar h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin: 1rem 1rem 1rem 2rem;
+   
   }
   .sidebar li {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
+    font-weight: 600;
   }
 
  li {
@@ -110,8 +118,8 @@
  
   
   .projects p {
-    font-size: 12px;
-    font-family: sans-serif;
+    font-size: 0.7rem;
+    
     font-weight: normal;
     text-align: left;
   }
@@ -128,7 +136,8 @@
   }
   
   .projects h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
   #project-title {
     grid-area: 1/1/2/2;
@@ -151,20 +160,30 @@
 
   .card {
     background-color: #ffffff;
-    border-radius: 2%;
+    border-radius: 0.7rem;
     display: grid;
     grid-template-columns: 2fr 98fr;
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
+    box-shadow:  -1px 4px 10px 0px #d9d1d1;
+    position: relative;
+    top: 0;
+
   }
   
 
+  .card:hover {
+    top: -2px;
+  }
+
   .card h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: left;
+    font-weight: 500;
   }
 
   .yellow {
-    background-color: #ffc505;
+    background-color: var(--yellow);
     grid-area: 1/1/-1/2;
+    border-radius: 0.7rem 0 0 0.7rem;
   }
