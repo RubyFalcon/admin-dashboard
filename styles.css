@@ -1,6 +1,6 @@
 :root {
     --main-color : #e5e9f1;
-
+    --blue: #059fff;
     --white: #ffffff;
     --yellow: #ffa805;
     
@@ -88,7 +88,7 @@
 
   .sidebar h1 {
     font-size: 2rem;
-    margin: 1rem 1rem 1rem 2rem;
+   
    
   }
   .sidebar li {
@@ -258,7 +258,7 @@
     padding-right: 2%;
   }
   button {
-    background-color: #059fff;
+    background-color: var(--blue);
     outline: none;
     border: none;
     border-radius: 2rem;
@@ -276,4 +276,30 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+
+  svg {
+    height: 1.5em;
+    width: 1.5em;
+  }
+
+  svg path {
+    fill: var(--blue);
+  }
+
+  .dashboard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .dashboard svg {
+    height: 3rem;
+    width: 3rem;
+  }
+  .dashboard svg path {
+    fill: var(--white);
   }
