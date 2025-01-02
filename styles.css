@@ -51,7 +51,10 @@
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
-  
+  a, a *, button, button * {
+    cursor: pointer;
+    transition: var(--fast-transition);
+}
   /*
     9. Create a root stacking context
   */
@@ -165,8 +168,13 @@
   }
 
   #side-info-title {
-    grid-area: 1/3;
-  }
+    grid-area: 1/3/2/4;
+    align-self: end;
+    justify-self: start;
+    margin-left: 1rem;
+}
+
+ 
 
   .cards{
     grid-area: 2/1/-1/3;
@@ -191,13 +199,28 @@
     top: 0;
   }
 
+  .side-card {
+    width: 80%;
+    height: 60vh;
+    margin: 2vh auto;
+    
+  }
+  .side-card ul {
+    width: 100%;
+  }
+  .side-card li{
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid gray ;
+  }
+
   
 
   .card:hover , .side-card:hover {
     top: -2px;
   }
 
-  .card h3 {
+   h3 {
     font-size: 1.1rem;
     text-align: left;
     font-weight: 500;
@@ -327,11 +350,15 @@
     width: 3rem;
     height: 3rem;
     transition: var(--base-transition);
-  }
+  }    background-color: aqua;
 
    a:hover , li:hover {
     color: var(--yellow);
    
+  }
+
+  button:hover {
+    background-color: var(--yellow);
   }
 
  a:hover svg {
@@ -356,4 +383,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  input:hover, .searchbar  input:focus {
+    filter: drop-shadow(0 0 0.1em var(--blue));
+
+  }
+
+  a:hover svg path {
+    fill: var(--yellow);
+  }
+
+  .searchbar:focus svg path {
+    fill: var(--yellow);
   }
