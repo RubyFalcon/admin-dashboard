@@ -3,6 +3,8 @@
     --blue: #059fff;
     --white: #ffffff;
     --yellow: #ffa805;
+    --fast-transition: all 0.15s ease-out;
+    --base-transition: all 0.3s  ease-out;
     
 }
 
@@ -167,7 +169,6 @@
     border-radius: 0.7rem;
     display: grid;
     grid-template-columns: 1fr 95fr;
-    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
     box-shadow:  -1px 4px 10px 0px #d9d1d1;
     position: relative;
@@ -300,6 +301,41 @@
     height: 3rem;
     width: 3rem;
   }
+
+  
   .dashboard svg path {
     fill: var(--white);
+  }
+
+  .profile-flex svg{
+    width: 3rem;
+    height: 3rem;
+    transition: var(--base-transition);
+  }
+
+  .profile-flex a:hover {
+    color: var(--yellow);
+   
+  }
+
+  .profile-flex a:hover svg {
+    transform:rotate(360deg) scale(1.5);
+    filter: drop-shadow(0 0 0.3em var(--yellow));
+  }
+
+  .profile-flex a svg{
+    transition: var(--base-transition);
+    margin-right: 2rem;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    margin: 1.4rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
