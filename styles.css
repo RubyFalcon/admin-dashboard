@@ -131,7 +131,7 @@
     box-shadow: inset -1px 4px 10px 0px #d9d1d1;
     color: black;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 9fr;
  
   }
@@ -201,19 +201,33 @@
 
   .side-card {
     width: 80%;
-    height: 60vh;
+    height: 40vh;
     margin: 2vh auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+  }
+ 
+  .content{
+    width: 100%;
+    margin: 0 auto;
     
+    margin-top: .5rem;
   }
-  .side-card ul {
-    width: 100%;
+  .divider {
+    border-bottom: 1px solid rgb(187, 185, 185) ;
   }
-  .side-card li{
-    width: 100%;
-    list-style: none;
-    border-bottom: 1px solid gray ;
+  .side-card h3 {
+    font-size: 1rem;
   }
-
+  
+  .content  p {
+    color:  rgb(90, 89, 89);
+    margin-bottom: .5rem;
+  }
   
 
   .card:hover , .side-card:hover {
